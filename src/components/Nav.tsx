@@ -23,7 +23,7 @@ export default function Nav() {
           </ul>
         </nav>
         <div className="nav-cta">
-          <a href="mailto:contact@patriciolumbe.com?subject=Lumbe%20Tech%20Discovery%20Call" className="btn btn-primary btn-sm">Book a call</a>
+          <a href="mailto:contact@lumbetech.com?subject=Lumbe%20Tech%20Discovery%20Call" className="btn btn-primary btn-sm">Book a call</a>
           <button type="button" className="nav-toggle" aria-expanded={isOpen} aria-label={isOpen ? "Close menu" : "Open menu"} onClick={() => setIsOpen((o) => !o)}>
             <span className="nav-toggle-bar" />
             <span className="nav-toggle-bar" />

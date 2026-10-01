@@ -6,8 +6,8 @@ const PRINCIPLES = [
 ];
 
 const INTEGRATIONS = [
-  ["Gmail", "GM"], ["Google Workspace", "GW"], ["Microsoft 365", "M365"], ["Outlook", "O"],
-  ["Slack", "S"], ["HubSpot", "H"], ["Salesforce", "SF"], ["Google Drive", "GD"],
+  ["Gmail", "✉"], ["Google Workspace", "G"], ["Microsoft 365", "365"], ["Outlook", "O"],
+  ["Slack", "S"], ["HubSpot", "H"], ["Salesforce", "SF"], ["Google Drive", "D"],
   ["AWS", "AWS"], ["IMAP-compatible email", "@"],
 ];
 

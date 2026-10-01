@@ -33,18 +33,18 @@ export default function Hero() {
             AWS Certified &middot; Built on Make
           </p>
           <h1 className="h1">
-            Control AWS costs.<br />Automate the work that slows your team down.
+            Turn repetitive work into faster sales, finance and cloud operations
           </h1>
           <p className="lede">
-            Lumbe Tech helps B2B teams reduce AWS waste, strengthen cloud security and automate repetitive sales and finance workflows. Clear scope, practical implementation and human control where it matters.
+            Lumbe Tech builds practical AI automations for sales and finance teams, and helps businesses reduce AWS waste and cloud risk while keeping people in control of important decisions
           </p>
           <div className="hero-actions">
-            <a href="#aws-cloud" className="btn btn-primary">Explore Our Solutions</a>
-            <a href="#contact" className="btn btn-ghost">Book a Call</a>
+            <a href="#ai-automation" className="btn btn-primary">Explore Our Solutions</a>
+            <a href="mailto:contact@patriciolumbe.com?subject=Lumbe%20Tech%20Discovery%20Call" className="btn btn-ghost">Book a Call</a>
           </div>
           <p className="trust-strip">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg>
-            Built from real cloud engineering and automation work.
+            Built from real cloud engineering and automation work
           </p>
         </div>
 

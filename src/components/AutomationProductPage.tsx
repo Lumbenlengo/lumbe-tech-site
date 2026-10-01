@@ -86,12 +86,9 @@ export default function AutomationProductPage({
               <span className="integration-label">Works with tools like</span>
               <span className="integration-pill">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="" /> Slack
+                <img src="https://a.slack-edge.com/a533fe3/marketing/img/media-kit/img-logos-alt.png" alt="" /> Slack
               </span>
-              <span className="integration-pill">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://www.make.com/favicon.ico" alt="" /> Make
-              </span>
+              <span className="integration-pill integration-text">Make</span>
               <span className="integration-pill integration-text">HubSpot</span>
               <span className="integration-note">Examples from the reference implementation. Client workflows are configured around supported business tools.</span>
             </div>

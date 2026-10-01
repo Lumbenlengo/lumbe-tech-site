@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 function LeadDemo() {
   return (
     <div className="product-media lead-outcomes" style={{ padding: 28 }}>
@@ -67,7 +65,7 @@ export default function AIAutomation() {
             </ul>
             <div className="product-actions">
               <a href="/ai-lead-qualification/en#demo" className="btn btn-primary">Watch Demo</a>
-              <a href="/ai-lead-qualification/en" className="btn btn-ghost">Get Started</a>
+              <a href="/free-pilot" className="btn btn-ghost">Book a Free Pilot</a>
             </div>
             <div className="product-language-links" aria-label="Discover Lead Qualification in your preferred language">
               <span>Discover more:</span>

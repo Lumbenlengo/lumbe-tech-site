@@ -2,49 +2,19 @@
 
 import { useEffect, useState } from "react";
 
-type FeedEvent = { id: number; who: string; text: string; time: string; status?: "wait" | "sent" };
-
-const SCRIPT: Omit<FeedEvent, "id">[] = [
-  { who: "Sarah Kim", text: "Inbound lead: needs a quote for onboarding 40 people next quarter.", time: "02:14" },
-  { who: "Lumbe assistant", text: "Qualified HIGH. CRM updated and follow-up task prepared for sales review.", time: "02:14", status: "wait" },
-  { who: "Sales", text: "Reviewed the lead and decided the next customer action.", time: "07:52", status: "sent" },
-  { who: "Marco Ferreira", text: "Inbound enquiry: asked about integrating with HubSpot.", time: "09:31" },
-  { who: "Lumbe assistant", text: "Answer drafted from your integration notes. Waiting for review.", time: "09:31", status: "wait" },
-];
-
 function LeadDemo() {
-  const [events, setEvents] = useState<FeedEvent[]>([]);
-  useEffect(() => {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) {
-      setEvents(SCRIPT.slice(0, 3).map((e, i) => ({ ...e, id: i })));
-      return;
-    }
-    let i = 0, id = 0;
-    let timer: ReturnType<typeof setTimeout>;
-    const push = () => {
-      setEvents((prev) => [...prev, { ...SCRIPT[i % SCRIPT.length], id: id++ }].slice(-3));
-      i++;
-      timer = setTimeout(push, 2200);
-    };
-    timer = setTimeout(push, 500);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div className="product-media" style={{ padding: 20 }}>
-      <div style={{ display: "grid", gap: 10 }}>
-        {events.map((e) => (
-          <div key={e.id} style={{ padding: 14, borderRadius: 10, border: "1px solid var(--border)", background: "var(--card)", display: "grid", gridTemplateColumns: "1fr auto", gap: 10 }}>
-            <div>
-              <strong style={{ fontSize: 14 }}>{e.who}</strong>
-              <p style={{ fontSize: 13.5, color: "var(--text-2)", marginTop: 3 }}>{e.text}</p>
-            </div>
-            <div style={{ display: "grid", gap: 6, justifyItems: "end" }}>
-              <span style={{ fontFamily: "var(--mono)", fontSize: 11.5, color: "var(--muted)" }}>{e.time}</span>
-              {e.status === "wait" && <span style={{ fontSize: 11, fontWeight: 600, padding: "2px 9px", borderRadius: 999, background: "rgba(251,191,36,.12)", color: "var(--amber)" }}>Waiting for you</span>}
-              {e.status === "sent" && <span style={{ fontSize: 11, fontWeight: 600, padding: "2px 9px", borderRadius: 999, background: "rgba(52,211,153,.12)", color: "var(--success)" }}>Sent</span>}
-            </div>
+    <div className="product-media lead-outcomes" style={{ padding: 28 }}>
+      <p className="eyebrow">What your sales team receives</p>
+      <div className="lead-outcome-grid">
+        {[
+          ["01", "Qualified priority", "New enquiries are reviewed and organised as HIGH, MEDIUM or LOW priority using configured rules"],
+          ["02", "CRM context", "Useful qualification context, notes and follow-up actions are prepared where your sales team already works"],
+          ["03", "Human control", "Customer-facing AI text stays as a draft until a person reviews and decides what to send"],
+        ].map(([n, title, text]) => (
+          <div className="lead-outcome" key={n}>
+            <span>{n}</span>
+            <div><strong>{title}</strong><p>{text}</p></div>
           </div>
         ))}
       </div>
@@ -80,7 +50,7 @@ export default function AIAutomation() {
           <p className="lede">Two focused automation systems for sales and finance teams. They handle repetitive processing while important customer and payment decisions stay with your team.</p>
         </div>
 
-        <div className="product-block reveal">
+        <div className="product-block product-frame glass reveal">
           <div>
             <span className="product-tag live">Flagship solution</span>
             <h3 className="product-title">Lead Qualification & Response</h3>
@@ -97,7 +67,7 @@ export default function AIAutomation() {
             </ul>
             <div className="product-actions">
               <a href="/ai-lead-qualification/en#demo" className="btn btn-primary">Watch Demo</a>
-              <a href="#contact" className="btn btn-ghost">Get Started</a>
+              <a href="/ai-lead-qualification/en" className="btn btn-ghost">Get Started</a>
             </div>
             <div className="product-language-links" aria-label="Discover Lead Qualification in your preferred language">
               <span>Discover more:</span>
@@ -110,7 +80,7 @@ export default function AIAutomation() {
           <LeadDemo />
         </div>
 
-        <div className="product-block is-reversed reveal">
+        <div className="product-block product-frame glass is-reversed reveal">
           <div>
             <span className="product-tag early">Early access</span>
             <h3 className="product-title">Invoice & Accounts Payable Automation</h3>
@@ -127,7 +97,7 @@ export default function AIAutomation() {
             </ul>
             <div className="product-actions">
               <a href="/ai-invoice-automation/en#demo" className="btn btn-primary">Watch Demo</a>
-              <a href="#contact" className="btn btn-ghost">Get Started</a>
+              <a href="/ai-invoice-automation/en" className="btn btn-ghost">Get Started</a>
             </div>
             <div className="product-language-links" aria-label="Discover Invoice Automation in your preferred language">
               <span>Discover more:</span>

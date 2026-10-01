@@ -11,7 +11,7 @@ export default function HowWeWork() {
       <div className="container">
         <div className="section-head reveal">
           <p className="eyebrow">How We Work</p>
-          <h2 className="h2">A clear path from problem to production.</h2>
+          <h2 className="h2">A clear path from problem to production</h2>
         </div>
         <div className="flow-steps">
           {STEPS.map((s, i) => (

@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 function LeadDemo() {
   return (
     <div className="product-media lead-outcomes" style={{ padding: 28 }}>
@@ -46,28 +44,26 @@ export default function AIAutomation() {
       <div className="container">
         <div className="section-head reveal">
           <p className="eyebrow">AI Automation</p>
-          <h2 className="h2">Automate repetitive work <em>without losing control</em>.</h2>
+          <h2 className="h2">Automate repetitive work <em>without losing control</em></h2>
           <p className="lede">Two focused automation systems for sales and finance teams. They handle repetitive processing while important customer and payment decisions stay with your team.</p>
         </div>
 
         <div className="product-block product-frame glass reveal">
           <div>
             <span className="product-tag live">Flagship solution</span>
-            <h3 className="product-title">Lead Qualification & Response</h3>
+            <h3 className="product-title">AI Lead Qualification</h3>
             <p className="product-desc">
-              Companies lose opportunities because leads arrive at all hours and sales
-              teams respond too slowly. This system captures inbound enquiries from configured sources, qualifies and prioritizes them,
-              updates the CRM and prepares the right follow-up context for your sales team.
+              Sales teams lose time manually reviewing new enquiries before they know which opportunities deserve attention. This system captures inbound enquiries from configured sources, qualifies and prioritizes them, updates the CRM and prepares the right follow-up context for your sales team.
               Customer-facing AI text remains under human review.
             </p>
             <ul className="product-benefits">
-              <li><span className="check-dot" aria-hidden="true">&#10003;</span>Faster, more consistent lead qualification</li>
-              <li><span className="check-dot" aria-hidden="true">&#10003;</span>Fewer opportunities missed outside business hours</li>
+              <li><span className="check-dot" aria-hidden="true">&#10003;</span>Know which sales opportunities deserve attention first</li>
+              <li><span className="check-dot" aria-hidden="true">&#10003;</span>Less manual triage before sales follow-up</li>
               <li><span className="check-dot" aria-hidden="true">&#10003;</span>CRM notes and follow-up actions kept traceable</li>
             </ul>
             <div className="product-actions">
               <a href="/ai-lead-qualification/en#demo" className="btn btn-primary">Watch Demo</a>
-              <a href="/ai-lead-qualification/en" className="btn btn-ghost">Get Started</a>
+              <a href="/free-pilot" className="btn btn-ghost">Book a Free Pilot</a>
             </div>
             <div className="product-language-links" aria-label="Discover Lead Qualification in your preferred language">
               <span>Discover more:</span>

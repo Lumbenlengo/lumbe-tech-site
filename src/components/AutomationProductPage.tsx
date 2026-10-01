@@ -81,6 +81,16 @@ export default function AutomationProductPage({
           <p className="eyebrow">{copy.eyebrow}</p>
           <h1 className="h1" style={{ fontSize: "clamp(34px, 5vw, 54px)", maxWidth: 820 }}>{copy.title}</h1>
           <p className="lede" style={{ fontSize: 19, maxWidth: 760 }}>{copy.tagline}</p>
+          {productSlug === "ai-lead-qualification" && (
+            <div className="integration-strip" aria-label="Example supported tools">
+              <span className="integration-label">Works with tools like</span>
+              <span className="integration-pill integration-text brand-hubspot"><b>H</b>HubSpot</span>
+              <span className="integration-pill integration-text brand-slack"><b>S</b>Slack</span>
+              <span className="integration-pill integration-text brand-make"><b>M</b>Make</span>
+              <span className="integration-pill integration-text brand-gemini"><b>G</b>Google Gemini</span>
+              <span className="integration-note">Examples from the reference implementation. Client workflows are configured around supported business tools.</span>
+            </div>
+          )}
 
           <section id="demo" style={{ marginTop: 44 }}>
             {productSlug === "ai-lead-qualification" ? (
@@ -140,6 +150,14 @@ export default function AutomationProductPage({
           <section style={{ marginTop: 48 }}>
             <h2 className="h2" style={{ fontSize: 28 }}>{copy.docsTitle}</h2>
             <p className="lede" style={{ maxWidth: 800 }}>{copy.docsIntro}</p>
+            {productSlug === "ai-lead-qualification" && (
+              <div className="glass product-guide-card" style={{ borderRadius: "var(--radius)", padding: 24, marginTop: 24 }}>
+                <span className="product-tag live" style={{ marginBottom: 12 }}>Product Guide</span>
+                <h3 className="h3">AI Lead Qualification Product Guide</h3>
+                <p style={{ color: "var(--text-2)", fontSize: 14.5, lineHeight: 1.7, marginTop: 8 }}>See the complete workflow, product screens, human control model and Free 15-Day Pilot.</p>
+                <a href="/docs/lead-product-guide.pdf" target="_blank" rel="noopener" className="btn btn-primary btn-sm" style={{ marginTop: 14 }}>View Product Guide</a>
+              </div>
+            )}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: 16, marginTop: 24 }}>
               {copy.docs.map((doc, i) => (
                 <div key={doc.title} className="glass" style={{ borderRadius: "var(--radius)", padding: 22 }}>
@@ -171,14 +189,18 @@ export default function AutomationProductPage({
             <h2 className="h2" style={{ fontSize: 28 }}>{copy.ctaTitle}</h2>
             <p className="lede">{copy.ctaText}</p>
             <div className="product-actions" style={{ marginTop: 24 }}>
-              <a href={`mailto:contact@patriciolumbe.com?subject=${encodeURIComponent(CONTACT_SUBJECTS[productSlug])}`} className="btn btn-primary">{copy.cta}</a>
+              {productSlug === "ai-lead-qualification" ? (
+                <Link href="/free-pilot" className="btn btn-primary">{copy.cta}</Link>
+              ) : (
+                <a href={`mailto:contact@lumbetech.com?subject=${encodeURIComponent(CONTACT_SUBJECTS[productSlug])}`} className="btn btn-primary">{copy.cta}</a>
+              )}
               <Link href="/" className="btn btn-ghost">{copy.back}</Link>
             </div>
           </section>
         </div>
       </main>
 
-      <footer className="footer"><div className="container footer-inner"><span className="footer-text">© 2026 Lumbe Tech</span><span className="footer-text">contact@patriciolumbe.com</span></div></footer>
+      <footer className="footer"><div className="container footer-inner"><span className="footer-text">© 2026 Lumbe Tech</span><span className="footer-text">contact@lumbetech.com</span></div></footer>
     </>
   );
 }

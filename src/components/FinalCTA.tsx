@@ -9,7 +9,7 @@ export default function FinalCTA() {
             Tell us where repetitive work, AWS cost or cloud risk is slowing your team down and we will help you define a practical next step
           </p>
           <div className="hero-actions" style={{ justifyContent: "center", marginTop: 30 }}>
-            <a href="mailto:contact@patriciolumbe.com?subject=Lumbe%20Tech%20Discovery%20Call" className="btn btn-primary">Book a Call</a>
+            <a href="mailto:contact@lumbetech.com?subject=Lumbe%20Tech%20Discovery%20Call" className="btn btn-primary">Book a Call</a>
           </div>
         </div>
       </div>

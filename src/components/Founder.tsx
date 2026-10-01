@@ -19,7 +19,6 @@ export default function Founder() {
           </div>
           <div className="founder-content">
             <p className="eyebrow">Founder</p>
-            <h2 className="h2">Engineering led. Founder involved.</h2>
             <p className="founder-name">Patricio Lumbe</p>
             <p className="founder-role">Founder &amp; Cloud Automation Engineer</p>
             <p className="founder-copy">
@@ -31,7 +30,7 @@ export default function Founder() {
             </ul>
             <div className="product-actions founder-actions">
               <a href="/ai-lead-qualification/en" className="btn btn-ghost">View Solutions</a>
-              <a href="mailto:contact@patriciolumbe.com?subject=Conversation%20with%20Lumbe%20Tech" className="btn btn-primary">Start a Conversation</a>
+              <a href="mailto:contact@lumbetech.com?subject=Conversation%20with%20Lumbe%20Tech" className="btn btn-primary">Start a Conversation</a>
             </div>
           </div>
         </div>

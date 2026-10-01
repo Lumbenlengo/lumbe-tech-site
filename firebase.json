@@ -6,6 +6,15 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/contact",
+        "run": {
+          "serviceId": "lumbe-lead-intake",
+          "region": "europe-west1"
+        }
+      }
     ]
   }
 }

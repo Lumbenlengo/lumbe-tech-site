@@ -44,7 +44,7 @@ export default function AIAutomation() {
       <div className="container">
         <div className="section-head reveal">
           <p className="eyebrow">AI Automation</p>
-          <h2 className="h2">Automate repetitive work <em>without losing control</em>.</h2>
+          <h2 className="h2">Automate repetitive work <em>without losing control</em></h2>
           <p className="lede">Two focused automation systems for sales and finance teams. They handle repetitive processing while important customer and payment decisions stay with your team.</p>
         </div>
 

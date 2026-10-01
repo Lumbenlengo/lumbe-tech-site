@@ -15,7 +15,7 @@ export default function Founder() {
         <div className="founder-premium glass reveal">
           <div className="founder-photo-wrap">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/patricio-lumbe-founder.png" alt="Patricio Lumbe, Founder of Lumbe Tech" className="founder-photo" />
+            <img src="/patricio-lumbe-founder.jpg" alt="Patricio Lumbe, Founder of Lumbe Tech" className="founder-photo" />
           </div>
           <div className="founder-content">
             <p className="eyebrow">Founder</p>

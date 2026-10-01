@@ -27,8 +27,8 @@ export default function AWSCloud() {
       <div className="container">
         <div className="section-head reveal">
           <p className="eyebrow">AWS Cloud Engineering</p>
-          <h2 className="h2">Reduce avoidable AWS spend. Make cloud risk visible.</h2>
-          <p className="lede">Two focused B2B assessments built around concrete engineering evidence: cost optimization and AWS security posture. Clear scope, prioritized findings, and deliverables your team can act on.</p>
+          <h2 className="h2">Reduce avoidable AWS spend and make cloud risk visible</h2>
+          <p className="lede">Two focused B2B assessments built around engineering evidence, clear scope, prioritized findings and practical actions your team can use</p>
         </div>
         <div className="service-grid">
           {SERVICES.map((s) => (

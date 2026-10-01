@@ -30,8 +30,8 @@ export default function Founder() {
               {CREDENTIALS.map((c) => <li className="chip" key={c}>{c}</li>)}
             </ul>
             <div className="product-actions founder-actions">
-              <a href="#aws-cloud" className="btn btn-ghost">View Solutions</a>
-              <a href="mailto:contact@lumbetech.com?subject=Conversation%20with%20Lumbe%20Tech" className="btn btn-primary">Start a Conversation</a>
+              <a href="/ai-lead-qualification/en" className="btn btn-ghost">View Solutions</a>
+              <a href="mailto:contact@patriciolumbe.com?subject=Conversation%20with%20Lumbe%20Tech" className="btn btn-primary">Start a Conversation</a>
             </div>
           </div>
         </div>

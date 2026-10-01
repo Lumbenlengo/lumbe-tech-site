@@ -27,6 +27,7 @@ type Copy = {
   ctaText: string;
   cta: string;
   back: string;
+  faq?: { question: string; answer: string }[];
 };
 
 const LABELS: Record<ProductLang, string> = { en: "English", pt: "Português", fr: "Français", es: "Español" };
@@ -37,6 +38,8 @@ const DOC_FILES: Record<string, string[]> = {
   "aws-audit": ["aws-security-methodology.pdf", "aws-security-access.pdf", "aws-security-deliverables.pdf"],
 };
 
+
+const LEAD_DEMO_URL = "https://storage.googleapis.com/lumbetech-public/lead-qualification/demo-en.mp4";
 
 const CONTACT_SUBJECTS: Record<string, string> = {
   "ai-lead-qualification": "AI Lead Qualification, Discovery Call",
@@ -80,12 +83,25 @@ export default function AutomationProductPage({
           <p className="lede" style={{ fontSize: 19, maxWidth: 760 }}>{copy.tagline}</p>
 
           <section id="demo" style={{ marginTop: 44 }}>
-            <div className="product-media glass" style={{ minHeight: 360, display: "grid", placeItems: "center", padding: 30 }}>
-              <div style={{ textAlign: "center", maxWidth: 520 }}>
-                <p className="eyebrow" style={{ marginBottom: 10 }}>{copy.demoTitle}</p>
-                <p style={{ color: "var(--text-2)", lineHeight: 1.7 }}>{copy.demoText}</p>
+            {productSlug === "ai-lead-qualification" ? (
+              <div className="product-media glass demo-video-card" style={{ minHeight: 0, padding: 20 }}>
+                <div style={{ marginBottom: 16 }}>
+                  <p className="eyebrow" style={{ marginBottom: 8 }}>{copy.demoTitle}</p>
+                  <p style={{ color: "var(--text-2)", lineHeight: 1.7 }}>{copy.demoText}</p>
+                </div>
+                <video controls preload="metadata" playsInline style={{ width: "100%", borderRadius: 12, display: "block" }}>
+                  <source src={LEAD_DEMO_URL} type="video/mp4" />
+                  Your browser does not support HTML video
+                </video>
               </div>
-            </div>
+            ) : (
+              <div className="product-media glass" style={{ minHeight: 360, display: "grid", placeItems: "center", padding: 30 }}>
+                <div style={{ textAlign: "center", maxWidth: 520 }}>
+                  <p className="eyebrow" style={{ marginBottom: 10 }}>{copy.demoTitle}</p>
+                  <p style={{ color: "var(--text-2)", lineHeight: 1.7 }}>{copy.demoText}</p>
+                </div>
+              </div>
+            )}
           </section>
 
           <section style={{ marginTop: 54 }}>
@@ -136,18 +152,33 @@ export default function AutomationProductPage({
             </div>
           </section>
 
+          {copy.faq && copy.faq.length > 0 && (
+            <section style={{ marginTop: 54 }}>
+              <p className="eyebrow">FAQ</p>
+              <h2 className="h2" style={{ fontSize: 28, marginBottom: 22 }}>Frequently asked questions</h2>
+              <div style={{ display: "grid", gap: 12 }}>
+                {copy.faq.map((item) => (
+                  <details className="glass faq-item" key={item.question}>
+                    <summary>{item.question}</summary>
+                    <p>{item.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
           <section className="glass" style={{ borderRadius: "var(--radius)", padding: 32, marginTop: 54 }}>
             <h2 className="h2" style={{ fontSize: 28 }}>{copy.ctaTitle}</h2>
             <p className="lede">{copy.ctaText}</p>
             <div className="product-actions" style={{ marginTop: 24 }}>
-              <a href={`mailto:contact@lumbetech.com?subject=${encodeURIComponent(CONTACT_SUBJECTS[productSlug])}`} className="btn btn-primary">{copy.cta}</a>
+              <a href={`mailto:contact@patriciolumbe.com?subject=${encodeURIComponent(CONTACT_SUBJECTS[productSlug])}`} className="btn btn-primary">{copy.cta}</a>
               <Link href="/" className="btn btn-ghost">{copy.back}</Link>
             </div>
           </section>
         </div>
       </main>
 
-      <footer className="footer"><div className="container footer-inner"><span className="footer-text">© 2026 Lumbe Tech</span><span className="footer-text">contact@lumbetech.com</span></div></footer>
+      <footer className="footer"><div className="container footer-inner"><span className="footer-text">© 2026 Lumbe Tech</span><span className="footer-text">contact@patriciolumbe.com</span></div></footer>
     </>
   );
 }

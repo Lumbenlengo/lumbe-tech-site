@@ -13,8 +13,8 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <AWSCloud />
         <AIAutomation />
+        <AWSCloud />
         <WhyLumbeTech />
         <HowWeWork />
         <Founder />
@@ -23,7 +23,7 @@ export default function Home() {
       <footer className="footer">
         <div className="container footer-inner">
           <span className="footer-text">© 2026 Lumbe Tech</span>
-          <span className="footer-text">contact@lumbetech.com</span>
+          <span className="footer-text">contact@patriciolumbe.com</span>
         </div>
       </footer>
     </>

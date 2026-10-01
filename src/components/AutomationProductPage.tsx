@@ -84,12 +84,10 @@ export default function AutomationProductPage({
           {productSlug === "ai-lead-qualification" && (
             <div className="integration-strip" aria-label="Example supported tools">
               <span className="integration-label">Works with tools like</span>
-              <span className="integration-pill">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://a.slack-edge.com/a533fe3/marketing/img/media-kit/img-logos-alt.png" alt="" /> Slack
-              </span>
-              <span className="integration-pill integration-text">Make</span>
               <span className="integration-pill integration-text">HubSpot</span>
+              <span className="integration-pill integration-text">Slack</span>
+              <span className="integration-pill integration-text">Make</span>
+              <span className="integration-pill integration-text">Google Gemini</span>
               <span className="integration-note">Examples from the reference implementation. Client workflows are configured around supported business tools.</span>
             </div>
           )}

@@ -84,10 +84,10 @@ export default function AutomationProductPage({
           {productSlug === "ai-lead-qualification" && (
             <div className="integration-strip" aria-label="Example supported tools">
               <span className="integration-label">Works with tools like</span>
-              <span className="integration-pill integration-text">HubSpot</span>
-              <span className="integration-pill integration-text">Slack</span>
-              <span className="integration-pill integration-text">Make</span>
-              <span className="integration-pill integration-text">Google Gemini</span>
+              <span className="integration-pill integration-text brand-hubspot"><b>H</b>HubSpot</span>
+              <span className="integration-pill integration-text brand-slack"><b>S</b>Slack</span>
+              <span className="integration-pill integration-text brand-make"><b>M</b>Make</span>
+              <span className="integration-pill integration-text brand-gemini"><b>G</b>Google Gemini</span>
               <span className="integration-note">Examples from the reference implementation. Client workflows are configured around supported business tools.</span>
             </div>
           )}

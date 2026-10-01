@@ -81,6 +81,21 @@ export default function AutomationProductPage({
           <p className="eyebrow">{copy.eyebrow}</p>
           <h1 className="h1" style={{ fontSize: "clamp(34px, 5vw, 54px)", maxWidth: 820 }}>{copy.title}</h1>
           <p className="lede" style={{ fontSize: 19, maxWidth: 760 }}>{copy.tagline}</p>
+          {productSlug === "ai-lead-qualification" && (
+            <div className="integration-strip" aria-label="Example supported tools">
+              <span className="integration-label">Works with tools like</span>
+              <span className="integration-pill">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="" /> Slack
+              </span>
+              <span className="integration-pill">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://www.make.com/favicon.ico" alt="" /> Make
+              </span>
+              <span className="integration-pill integration-text">HubSpot</span>
+              <span className="integration-note">Examples from the reference implementation. Client workflows are configured around supported business tools.</span>
+            </div>
+          )}
 
           <section id="demo" style={{ marginTop: 44 }}>
             {productSlug === "ai-lead-qualification" ? (

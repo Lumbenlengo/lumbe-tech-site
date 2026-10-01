@@ -40,7 +40,7 @@ export default function Hero() {
           </p>
           <div className="hero-actions">
             <a href="#ai-automation" className="btn btn-primary">Explore Our Solutions</a>
-            <a href="mailto:contact@patriciolumbe.com?subject=Lumbe%20Tech%20Discovery%20Call" className="btn btn-ghost">Book a Call</a>
+            <a href="mailto:contact@lumbetech.com?subject=Lumbe%20Tech%20Discovery%20Call" className="btn btn-ghost">Book a Call</a>
           </div>
           <p className="trust-strip">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg>

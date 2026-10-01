@@ -19,7 +19,6 @@ export default function Founder() {
           </div>
           <div className="founder-content">
             <p className="eyebrow">Founder</p>
-            <h2 className="h2">Engineering led. Founder involved.</h2>
             <p className="founder-name">Patricio Lumbe</p>
             <p className="founder-role">Founder &amp; Cloud Automation Engineer</p>
             <p className="founder-copy">

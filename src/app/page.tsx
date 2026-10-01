@@ -13,8 +13,8 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <AWSCloud />
         <AIAutomation />
+        <AWSCloud />
         <WhyLumbeTech />
         <HowWeWork />
         <Founder />

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "project-5c15975f-e002-4ccf-b67"
+  },
+  "targets": {
+    "project-5c15975f-e002-4ccf-b67": {
+      "hosting": {
+        "lumbetech": [
+          "lumbetech-com"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

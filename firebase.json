@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target": "lumbetech",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

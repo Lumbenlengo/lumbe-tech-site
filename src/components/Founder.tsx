@@ -15,7 +15,7 @@ export default function Founder() {
         <div className="founder-premium glass reveal">
           <div className="founder-photo-wrap">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/patricio-lumbe-founder.jpg" alt="Patricio Lumbe, Founder of Lumbe Tech" className="founder-photo" />
+            <img src="/patricio-lumbe-founder.png" alt="Patricio Lumbe, Founder of Lumbe Tech" className="founder-photo" />
           </div>
           <div className="founder-content">
             <p className="eyebrow">Founder</p>
@@ -31,7 +31,7 @@ export default function Founder() {
             </ul>
             <div className="product-actions founder-actions">
               <a href="/ai-lead-qualification/en" className="btn btn-ghost">View Solutions</a>
-              <a href="mailto:contact@patriciolumbe.com?subject=Conversation%20with%20Lumbe%20Tech" className="btn btn-primary">Start a Conversation</a>
+              <a href="mailto:contact@lumbetech.com?subject=Conversation%20with%20Lumbe%20Tech" className="btn btn-primary">Start a Conversation</a>
             </div>
           </div>
         </div>

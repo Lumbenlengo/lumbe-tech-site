@@ -11,13 +11,12 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <header className={`nav${isScrolled ? " is-scrolled" : ""}${isOpen ? " is-open" : ""}`}>
+    <header className={"nav" + (isScrolled ? " is-scrolled" : "") + (isOpen ? " is-open" : "")}>
       <div className="nav-inner">
         <a href="#top" className="logo">Lumbe<span>.Tech</span></a>
         <nav className="nav-menu" aria-label="Main">
           <ul className="nav-links">
             <li><a href="#ai-automation" onClick={() => setIsOpen(false)}>AI Automation</a></li>
-            <li><a href="#aws-cloud" onClick={() => setIsOpen(false)}>AWS Cloud</a></li>
             <li><a href="#why" onClick={() => setIsOpen(false)}>Why Lumbe Tech</a></li>
             <li><a href="#how" onClick={() => setIsOpen(false)}>How We Work</a></li>
           </ul>

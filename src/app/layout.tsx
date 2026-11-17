@@ -4,20 +4,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 import PageEffects from "@/components/PageEffects";
 
 export const metadata: Metadata = {
-  title: "Lumbe Tech | AWS Cloud Engineering & AI Automation for B2B",
-  description:
-    "Lumbe Tech reviews AWS cost and security, and builds the AI systems that qualify leads and process invoices. Human-controlled, fixed-scope, built for your stack.",
+  title: "Lumbe Tech | AI Automation with Make for B2B",
+  description: "Lumbe Tech builds practical Make.com automations and AI-assisted workflows for sales and finance teams. Qualify leads, process invoices and keep people in control of important decisions.",
   metadataBase: new URL("https://lumbetech.com"),
   openGraph: {
-    title: "Lumbe Tech | AWS Cloud Engineering & AI Automation for B2B",
-    description: "AWS cost and security reviews, and AI systems for leads and invoices. Human-controlled. Built for your stack.",
+    title: "Lumbe Tech | AI Automation with Make for B2B",
+    description: "Practical Make.com automations for lead qualification and invoice processing. Human-controlled, built around the way your team works.",
     type: "website",
     url: "https://lumbetech.com/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lumbe Tech | AWS Cloud Engineering & AI Automation for B2B",
-    description: "AWS cost and security reviews, and AI systems for leads and invoices.",
+    title: "Lumbe Tech | AI Automation with Make for B2B",
+    description: "Make.com automations for sales and finance teams, with people in control of important decisions.",
   },
 };
 

@@ -1,13 +1,10 @@
 const CREDENTIALS = [
-  "AWS Certified Solutions Architect Associate",
-  "AWS Certified Cloud Practitioner",
   "Make AI Agent Builder",
   "Make AI Automation Explorer",
   "Make Advanced",
   "Make Intermediate",
   "Make Basics",
 ];
-
 export default function Founder() {
   return (
     <section className="section founder-section" id="founder">
@@ -20,13 +17,13 @@ export default function Founder() {
           <div className="founder-content">
             <p className="eyebrow">Founder</p>
             <p className="founder-name">Patricio Lumbe</p>
-            <p className="founder-role">Founder &amp; Cloud Automation Engineer</p>
+            <p className="founder-role">Founder &amp; AI Automation Engineer</p>
             <p className="founder-copy">
-              Patricio builds AWS cloud systems and business automations designed to solve practical operational problems. At Lumbe Tech, he stays close to the technical work from discovery through implementation.
+              Patricio designs Make.com workflows and practical AI automations for sales and finance teams. He stays close to the work from the first process discussion through implementation, testing and handover, so the solution fits the way the business operates.
             </p>
             <p className="founder-education">Mathematics &amp; Computer Science<br /><span>Université Toulouse - Jean Jaurès</span></p>
             <ul className="chips founder-credentials">
-              {CREDENTIALS.map((c) => <li className="chip" key={c}>{c}</li>)}
+              {CREDENTIALS.map((credential) => <li className="chip" key={credential}>{credential}</li>)}
             </ul>
             <div className="product-actions founder-actions">
               <a href="/ai-lead-qualification/en" className="btn btn-ghost">View Solutions</a>

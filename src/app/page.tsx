@@ -1,6 +1,5 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import AWSCloud from "@/components/AWSCloud";
 import AIAutomation from "@/components/AIAutomation";
 import WhyLumbeTech from "@/components/WhyLumbeTech";
 import HowWeWork from "@/components/HowWeWork";
@@ -14,7 +13,6 @@ export default function Home() {
       <main>
         <Hero />
         <AIAutomation />
-        <AWSCloud />
         <WhyLumbeTech />
         <HowWeWork />
         <Founder />
@@ -23,7 +21,7 @@ export default function Home() {
       <footer className="footer">
         <div className="container footer-inner">
           <span className="footer-text">© 2026 Lumbe Tech</span>
-          <span className="footer-text">contact@patriciolumbe.com</span>
+          <span className="footer-text">contact@lumbetech.com</span>
         </div>
       </footer>
     </>

@@ -43,9 +43,9 @@ export default function AIAutomation() {
     <section className="section section-alt" id="ai-automation">
       <div className="container">
         <div className="section-head reveal">
-          <p className="eyebrow">AI Automation</p>
+          <p className="eyebrow">AI Automation with Make</p>
           <h2 className="h2">Automate repetitive work <em>without losing control</em></h2>
-          <p className="lede">Two focused automation systems for sales and finance teams. They handle repetitive processing while important customer and payment decisions stay with your team.</p>
+          <p className="lede">Two focused Make-powered automation systems for sales and finance teams. They handle repetitive processing while important customer and payment decisions stay with your team.</p>
         </div>
 
         <div className="product-block product-frame glass reveal">
@@ -79,7 +79,7 @@ export default function AIAutomation() {
         <div className="product-block product-frame glass is-reversed reveal">
           <div>
             <span className="product-tag early">Early access</span>
-            <h3 className="product-title">Invoice & Accounts Payable Automation</h3>
+            <h3 className="product-title">Invoice &amp; Accounts Payable Automation</h3>
             <p className="product-desc">
               Finance teams lose hours downloading invoices, checking suppliers, hunting
               duplicates and chasing approvals. This system reads each invoice, validates

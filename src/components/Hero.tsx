@@ -1,12 +1,15 @@
 import HeroPipeline from "./HeroPipeline";
+import BrandLogo from "./BrandLogo";
 
-type TickerItem = { label: string; mark: string };
+type TickerItem = { label: string; slug: string };
 
 const TICKER_ITEMS: TickerItem[] = [
-  { label: "Make.com", mark: "M" }, { label: "AI Agents", mark: "AI" },
-  { label: "HubSpot", mark: "H" }, { label: "Google Workspace", mark: "G" },
-  { label: "Slack", mark: "S" }, { label: "Salesforce", mark: "SF" },
-  { label: "Gmail", mark: "@" }, { label: "Invoice Processing", mark: "AP" },
+  { label: "Make", slug: "make" },
+  { label: "Gmail", slug: "gmail" },
+  { label: "Google Drive", slug: "googledrive" },
+  { label: "Outlook", slug: "microsoftoutlook" },
+  { label: "HubSpot", slug: "hubspot" },
+  { label: "Salesforce", slug: "salesforce" },
 ];
 
 export default function Hero() {
@@ -32,11 +35,7 @@ export default function Hero() {
         <div className="ticker-track">
           {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
             <span className="ticker-item" key={item.label + "-" + i}>
-              <span className="ticker-icon" style={{
-                display: "inline-grid", placeItems: "center", background: "rgba(56,189,248,.12)",
-                color: "var(--accent)", border: "1px solid var(--border-strong)",
-                fontSize: item.mark.length > 1 ? 7 : 10, fontFamily: "var(--mono)", fontWeight: 700, lineHeight: 1
-              }}>{item.mark}</span>
+              <BrandLogo brand={item.label} slug={item.slug} className="ticker-icon" decorative />
               {item.label}<span className="ticker-sep">&#10022;</span>
             </span>
           ))}

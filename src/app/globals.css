@@ -39,7 +39,7 @@ button, a { cursor: pointer; }
 .container { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
 .section { padding: var(--section-pad) 0; position: relative; }
 .section-alt { background: linear-gradient(135deg, #f4f8fc 0%, #e6eff8 100%); border-block: 1px solid #d4e0ec; color: #17263d; }
-.section-alt .eyebrow { color: #087b9c; }
+.section-alt .section-head > .eyebrow { color: #087b9c; }
 .section-alt .h2 { color: #17263d; }
 .section-alt .lede { color: #52657d; }
 .section-alt .flow-num { color: #087b9c; }
